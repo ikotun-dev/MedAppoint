@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static 'signIn.css' %}">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Sign In</h1>
+      <form method="post" action="/signin">
+        {% csrf_token %}
+        <h5 class="error">{{error}}</h5>
+
+        <h5 id="created">{{created}}</h5>
+
+        <label for="email" id="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password" id="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Sign In">
+        <a href={% url 'signup' %}>Dont have an account? Signup</a>
+      </form>
+    </div>
+  </body>
+</html>

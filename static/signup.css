@@ -1,0 +1,53 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
+  }
+  form {
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  input[type=text], input[type=password], input[type=email],input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 5px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+  .container {
+    padding: 16px;
+  }
+  h1 {
+    text-align: center;
+  }
+  h5{
+    color: red;
+  }
